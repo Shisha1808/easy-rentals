@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY RENTALS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 5px 0;
+        }
+        input, textarea {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EASY RENTALS</h1>
+        <p>Delivering tools at your doorstep with a handyman!</p>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>Welcome to EASY RENTALS! Our main motive is to deliver tools right to your doorstep, along with a handyman service available at $20 per hour. We aim to make your projects easier and more efficient with our convenient rental services.</p>
+        </div>
+        <div class="section">
+            <h2>Our Tools</h2>
+            <ul>
+                <li>
+                    <h3>Pressure Washer</h3>
+                    <p>Our high-quality pressure washers can help you clean driveways, decks, and other surfaces quickly and effectively.</p>
+                </li>
+                <li>
+                    <h3>Gardening Tools</h3>
+                    <p>We offer a range of gardening tools including pruners, shovels, and rakes to help you maintain your garden with ease.</p>
+                </li>
+                <li>
+                    <h3>Carpet Cleaner</h3>
+                    <p>Our powerful carpet cleaners will leave your carpets looking fresh and new, removing deep-seated dirt and stains.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Bookings</h2>
+            <form action="https://formspree.io/f/xqkrvgyw" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Booking Details</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>Phone Number: <a href="tel:6474475190">647-447-5190</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 EASY RENTALS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
